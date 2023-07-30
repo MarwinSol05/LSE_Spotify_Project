@@ -1,56 +1,24 @@
-# ST445 Managing and Visualising data
+# ST445 Managing and Visualising Data Project
 
-## Project
+## Motivation
+In this analysis, we sought to display and analyze the trends in musical attributes across different years and countries, described as “markets” going forward. Music plays a central role in many people’s lives through its ability to entertain and also its ability to impact mood and stress levels (Gray, 2022). Increased technology and the rise of modern music platforms allows individuals to be constantly connected to artists and their music. With this shift, music has become an even more central part of people’s lives and can be thought of as a reflection of the individual’s identity, mood, and well-being at any certain point in time. Using a quantified view of music, this analysis seeks to identify particular key attributes of popular music across years and countries and any potential shifts that may have occurred.
 
-### 2022/23 MT
+Given that an individual’s musical listening habits can be interpreted as a reflection of their well-being, this analysis will compare trends in popular music to two additional views of the well-being of certain countries over certain years - GDP per country and their Happiness Index. Using a layered approach of musical and well-being data will provide additional insight into the way in which music can exist as a reflection of culture at a certain time and place. Finally, this analysis seeks to cluster songs based on their shared quantitative attributes and finally classifies songs as "Popular" vs "Not Popular" using these same attributes.
 
----
+## Research Questions
+1. How do the key attributes of music interact with one another and do there exist any relations between them?
 
-**!! Please read this README file as it contains the important information about the project!!**
+2. How have the key attributes of popular music shifted over time and how does this relate to the well-being of certain countries at those points in time?
 
-The maximum mark you can get from the project is 100.
+3. Can music be grouped based on shared quantitative attributes, to provide insight into shared attributes and how does this relate to the genre attribute? Based on these attributes, can a song be predicted to be Popular or Not Popular?
 
-* **Submission deadline: 1 March 2023 12noon**
-  * Any work submitted after the deadline will be penalised
-  * Please make sure you submit _all_ the required files by the deadline - see "Submission procedure" section for more details
-* **Cut-off: 8 March 2023 12noon**
-  * No submission will be accepted after the cut-off
+## Conclusion
+This analysis sought to analyse Spotify musical attributes, in relation to each other and other country-level factors of well-being. Additionally, this analysis sought to dive further into how these attributes lead to various groupings of songs and whether attributes can be used to predict the popularity of a song.
 
-**It is a summative assessment and it accounts for 80% of your final grade.** Requests for extensions are only granted in exceptional circumstances. In particular, no extension will be granted for job related applications, late course add drop, clash with other course work, etc.
-* The school extension policy and procedure can be found [here](https://info.lse.ac.uk/current-students/services/assessment-and-results/exceptional-circumstances/extension-policy)
+In our analysis, we first discovered that there do exist relations between various musical attributes and that the Spotify-based rank of popularity varies across years and markets. Additionally, comparing musical attributes against other markers of the well-being of a country (happiness and GDP) can produce interesting insights. While music certainly does not provide a full contextual picture for these markers, given that there are many aspects that influence them, music can be a way in which some of the effects of these markers manifest themselves. For example, happier countries do sometimes seem to listen to more positive music.
 
----
+Finally, clustering the quantitative dataset of music provides insight into the ways in which music is differentiated, especially alongside the pop genre. Taking this idea of differentiation one step further, it was concluded that predicting a binary Spotify popularity class based of attributes is possible and outperforms that of random classifiers. This suggests that popular music does in fact share attributes that contributes to its popularity.
 
-## Submission procedure
+This analysis did suffer from several limitations, including the high reliance on the Spotify definitions of the attributes used. Given that the analysis leveraged an API, our group was entirely dependent on the outputs of this API and their sourcing. For example, an attribute such as popularity was entirely defined by Spotify using logic that we do not have complete insight into. Additionally, given API limitations, this analysis was limited to several years and markets. More markets would have provided a more representative data set to be used but would have exceeded API rate limits.
 
-**Your work will only be treated as submitted if you have done all of the following:**
-
-1. Submit the final report in the form of Jupyter Notebook together with other necessary files (e.g. data, additional code files, etc) via GitHub
-2. Submit the `plagiarism_statement.docx` via Moodle, with the 5-digit _candidate numbers_ (NOT the student ids) of all group members and the link to the project GitHub repository
-3. Submit the `Individual_contribution.docx` via Moodle if your group has more than 1 member
-
-Only one submission is needed for each group.
-
-Please read the [`Departmental GitHub guidance`](https://moodle.lse.ac.uk/pluginfile.php/1958282/mod_resource/content/2/Guidance%20on%20use%20of%20GitHub%20and%20Moodle%20for%20student%20assessment%20submissions%20%28Updated%20for%202022-23%29.pdf) on Moodle for further details.
-
----
-
-## Late submission penalty
-  * For the first 24 hours after the submission deadline:
-    * 5% marks will be deducted for every half-day (12 hours). This will result in a maximum penalty of 10% marks for the first 24 hours
-  * For beyond the first 24 hours after the submission deadline, but before the cutoff:
-    * 10% marks will be deducted for the first 24 hours as above then 5% marks will be deducted per 24 hour period (not limited to working days)
-  * For submission after the cut-off
-    * Any submission after the cut-off will automatically receive 0 marks
-
----
-
-## Project instruction
-
-See https://moodle.lse.ac.uk/pluginfile.php/2188174/mod_resource/content/0/project.html for more details
-
----
-
-## Marking criteria
-
-Please see the `marking_rubric.xlsb` and the "Criteria of evaluation" section in the project instruction.
+In terms of next steps, studies on similar topics could look further into the correlations between musical attributes themselves and other markers to provide research into whether these relations can be seen as causal relationships. Moreover, additional research could seek to explore other markers of well-being that music could provide a reflection of. While this study focused on happiness (Happiness Index) and productivity (GDP per Capita) topics using different markers or different topics altogether could be explored using similar methodology. Additionally, next steps could include the use of the classification models created during this study and test their performance on songs outside of the scope of our initial dataset. Given that the entire, and thus also training, data set was formed of only four markets, performance of the classifiers outside of these markets should be tested further and used with caution.
