@@ -1,4 +1,4 @@
-# ST445 Managing and Visualising Data Project
+# LSE_Spotify_Project
 
 ## Motivation
 In this analysis, we sought to display and analyze the trends in musical attributes across different years and countries, described as “markets” going forward. Music plays a central role in many people’s lives through its ability to entertain and also its ability to impact mood and stress levels (Gray, 2022). Increased technology and the rise of modern music platforms allows individuals to be constantly connected to artists and their music. With this shift, music has become an even more central part of people’s lives and can be thought of as a reflection of the individual’s identity, mood, and well-being at any certain point in time. Using a quantified view of music, this analysis seeks to identify particular key attributes of popular music across years and countries and any potential shifts that may have occurred.
